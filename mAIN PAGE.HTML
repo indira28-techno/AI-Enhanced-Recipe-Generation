@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #b0ebf4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; 
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .pro-pic{
+    width: 100px;
+}
+.pro-pic{
+    width: 200px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;}
+
+        .header-image {
+            align-self: flex-start;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item {
+            background-color: #c05a2e;
+            color: black;
+            padding: 15px 25px;
+            margin: 15px 0;
+            width: 180px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            right: -30px;
+            top: 0;
+            border-top: 27px solid transparent;
+            border-bottom: 27px solid transparent;
+            border-left: 30px solid #c05a2e;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .footer-decoration {
+            margin-top: auto;
+            padding-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .footer-decoration img {
+            width: 60px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-image">
+            <img src="https://png.pngtree.com/png-clipart/20241117/original/pngtree-smiling-female-chef-holding-a-spoon-and-serving-dish-cartoon-illustration-png-image_17162705.png" alt="Chef">
+        </div>
+
+        <a href="http://127.0.0.1:5500/AI%20ENHANCED%20RECIPE%20GENERATION%20APP/templates/Available%20Ingredients.HTML"><button class="menu-item">Generate<br>Recipe</button></a>
+        <a href="http://127.0.0.1:5500/AI%20ENHANCED%20RECIPE%20GENERATION%20APP/templates/DAILY%20TRACKER.HTML"><button class="menu-item">Daily Food<br>Tracker</button></a>
+        <a href="http://127.0.0.1:5500/AI%20ENHANCED%20RECIPE%20GENERATION%20APP/templates/WEEKLY%20PLANN.HTML"><button class="menu-item">Weekly Plan</button></a>
+        <a href="http://127.0.0.1:5500/AI%20ENHANCED%20RECIPE%20GENERATION%20APP/templates/saved%20recipe.html"><button class="menu-item">Saved<br>Recipes</button></a>
+
+        <div class="footer-decoration">
+            <img src="https://img.freepik.com/premium-vector/free-vector-apple-cartoon-character-design-smiling-face-clipart-kawaaii-style_989829-18.jpg?w=2000" alt="Fruit">
+            <img src="https://img.freepik.com/premium-vector/vector-cartoon-orange-fruit-with-green-leaves_574806-2168.jpg?w=2000" alt="Fruit">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.q4pYAAIcLKPM-07nIubiKAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fruit">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/294/989/large_2x/guava-fruit-fresh-food-cartoon-illustration-vector.jpg" alt="Fruit">
+        </div>
+        <div class="footer-decoration">@PLAN&PLATE.since 2026
+        </div>
+    </div>
+
+</body>
+</html>
